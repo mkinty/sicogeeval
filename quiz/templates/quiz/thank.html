@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load materializecss %}
+{% load i18n %}
+{% block title %}
+  Evaluation enrégistrée avec succès
+{% endblock title %}
+{% block content %}
+<div>
+  <div class="evalQuiz">
+        <h3>{{sms}}</h3>
+
+        <a href="https://www.sicoge.com/" target="_blank">
+            <div class="image">
+                <img src="{% static './icons/logo.jpg' %}" alt="">
+            </div>
+        </a>
+
+    </div>
+
+</div>
+{% endblock content %}

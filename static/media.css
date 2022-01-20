@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1200px) {
+    .container.quiz-container {
+        width: 85%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container.quiz-container {
+        width: 90%;
+    }
+    .evaluation-icons{
+        flex-direction: column;
+    }
+    .evaluation-icons span {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container.quiz-container {
+        width: 95%;
+    }
+    .text, .dates {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .date {
+        margin: 1.5rem 0 !important;
+    }
+    .org {
+        flex-direction: column;
+    }
+    .org div {
+        width: 100% !important;
+    }
+    .eval-items {
+        margin: 1.5rem 0;
+    }
+    .title,
+    .comment {
+        margin-bottom: 1.5rem;
+    }
+    .comment .item {
+    display: block;
+}
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container.quiz-container {
+        width: 100%;
+    }
+    .evaluation-icons {
+        margin-bottom: 1rem;
+    }
+    .icons-items {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .image {
+        display: none;
+    }
+    .option {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .option ul,
+    .option div {
+        flex-direction: column;
+    }
+    .option ul li:nth-child(2),
+    .option div:nth-child(2) {
+        margin: 0;
+    }
+    .stage-title {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .container.quiz-container {
+        padding: 0 1rem;
+    }
+}

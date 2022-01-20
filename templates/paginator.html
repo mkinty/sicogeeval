@@ -1,0 +1,11 @@
+<div class="pagination">
+  <span class="step-link">
+    {% if page_obj.has_previous %}
+    <a href="?page={{ page_obj.previous_page_number }}"><button class=" page-btn page-btn-left">Precedent</button></a>
+    {% endif %}
+    <button class="page-btn current">{{ page_obj.number }} sur {{ page_obj.paginator.num_pages }}</button>
+    {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}"><button class="page-btn page-btn-right">Suivant</button></a>
+    {% endif %}
+  </span>
+</div>

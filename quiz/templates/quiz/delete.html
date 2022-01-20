@@ -1,0 +1,18 @@
+<div class="modal">
+    <form method="POST" action="{% url 'quiz:delete-eval' result.id %}" enctype="multipart/form-data" class="ui form">
+        <div class="header">
+            <h2>Suppression d'un résultat de l'évaluation de satisfaction</h2>
+        </div>
+        <div class="content">
+            {% csrf_token %}
+            <span>
+                Etes-vous sûre de vouloir supprimer le résultat de
+                {% if result.name %} l'évaluation de {{ result.name }}{% else %}cette évaluation{% endif %}  ?
+            </span>
+        </div>
+        <div class="formBtn actions">
+            <a href="{% url 'quiz:result-view' %}"><span class="modal-close">Annuler</span></a>
+            <button class="confirm-btn delete " type="submit">Supprimer</button>
+        </div>
+    </form>
+</div>
