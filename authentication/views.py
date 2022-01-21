@@ -2,8 +2,10 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from authentication.forms import CreateUserForm
+from django.views.decorators.csrf import csrf_protect
 
 
+@csrf_protect
 def registerPage(request):
     if request.user.is_authenticated:
         return redirect('quiz:result-view')
@@ -22,6 +24,7 @@ def registerPage(request):
         return render(request, 'authentication/register.html', context)
 
 
+@csrf_protect
 def loginPage(request):
     if request.user.is_authenticated:
         return redirect('quiz:result-view')
