@@ -42,6 +42,8 @@ def result_view(request):
     return render(request, 'quiz/result.html', context)
 
 
+@login_required(login_url='login')
+@allowed_users(allowed_roles=['team'])
 def render_pdf_view(request, pk):
     """
     student eval pdf views
