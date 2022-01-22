@@ -12,7 +12,7 @@ def allowed_users(allowed_roles=[]):
             if group in allowed_roles:
                 return view_func(request, *args, **kwargs)
             else:
-                return HttpResponse(" Vous n'êtes pas autorisé à voir ou supprimer des évaluations de satisfaction ")
+                return HttpResponse(" Vous n'êtes pas autorisé à voir ou à supprimer les évaluations de satisfaction ")
 
         return wrapper_func
 
