@@ -36,6 +36,8 @@
     }
     .eval-items {
         margin: 1.5rem 0;
+        display: flex !important;
+        justify-content: space-between !important;
     }
     .title,
     .comment {
