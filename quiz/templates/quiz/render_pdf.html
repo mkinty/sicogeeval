@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 {% block title %}
-  Resultat eval en pdf
+Resultat eval en pdf
 {% endblock title %}
 {% block content %}
 <div class="header">
@@ -692,7 +692,9 @@
     </div>
     <div class="recom">
       <span>Pensez-vous pouvoir le recommander à d'autres personnes de votre entourage ? Lesquelles ? </span>
+      {% if eval.recommendation2 %}
       <span>{{eval.recommendation2}}</span>
+      {% endif %}
     </div>
   </div>
   <div class="other_formation">
