@@ -34,10 +34,21 @@
     .org div {
         width: 100% !important;
     }
-    .eval-items {
+    .eval ul  {
         margin: 1.5rem 0;
-        display: flex !important;
-        justify-content: space-between !important;
+    }
+    .eval.media {
+      display: block;
+    }
+    .eval.full {
+      display: none;
+    }
+    .eval.media ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    .comment-header {
+      display: none;
     }
     .title,
     .comment {

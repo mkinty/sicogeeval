@@ -245,10 +245,13 @@ form .modal {
     font-size: 1.3rem;
 }
 
-.eval   ul,
-.eval   div:first-child {
+.eval ul,
+.eval div:first-child {
     display: flex;
     justify-content: space-between;
+}
+.eval.media {
+  display: none;
 }
 .title {
     margin-top: 1rem;
