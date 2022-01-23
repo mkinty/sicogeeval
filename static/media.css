@@ -37,9 +37,6 @@
     .org.choice.rec {
       flex-direction: row !important;
     }
-    .eval ul  {
-        margin: 1.5rem 0;
-    }
     .eval.media {
       display: block;
     }
