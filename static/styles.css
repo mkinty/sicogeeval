@@ -107,7 +107,7 @@ button {
 
 .container.quiz-container {
     margin-top: 4rem;
-    width: 80% ;
+    width: 100% ;
 }
 /* --- FORM CARDS --- */
 .form-card {
@@ -506,4 +506,8 @@ label span{
   align-items: center;
   justify-content: center;
   border-left: 0.1rem solid var(--text) !important;
+}
+table tr th,
+table tr td {
+  border-right: 0.1rem solid var(--light) !important;
 }
