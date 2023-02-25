@@ -161,5 +161,5 @@ Thumbs.db
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 /staticfiles/
-/eval/settings_server.py
-/eval/wsgi_server.py
+settings_server.py/
+wsgi_server.py/
