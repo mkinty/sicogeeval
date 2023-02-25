@@ -1,1 +1,1 @@
-/Users/moustaphakinty/KmyProd/sicageeval/venv/bin/python /Users/moustaphakinty/KmyProd/sicageeval/src/manage.py runserver
+/Users/moustaphakinty/sicogeeval/venv/bin/python /Users/moustaphakinty/KmyProd/sicageeval/src/manage.py runserver

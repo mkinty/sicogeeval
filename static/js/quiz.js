@@ -1,4 +1,4 @@
-console.log('Hello World Evaluation')
+console.log('Hello World !!! This is a Sicoge Evaluation file')
 
 
 //*** --- CHOICES --- ***//

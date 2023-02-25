@@ -49,6 +49,11 @@ class Quiz(models.Model):
     ap_comment2 = models.CharField(max_length=200, null=True, blank=True)
     # Recommandation de la formamtion
     recommendation2 = models.CharField(max_length=200, null=True, blank=True)
+    # AUTO-ÉVALUATION DES ACQUIS
+    acquis1 = models.CharField(max_length=200, null=True, blank=True)
+    acquis2 = models.CharField(max_length=200, null=True, blank=True)
+    acquis3 = models.CharField(max_length=200, null=True, blank=True)
+    acquis_comment = models.CharField(max_length=200, null=True, blank=True)
     # Autres besoins de la formation
     other_formation2 = models.CharField(max_length=200, null=True, blank=True)
     other_formation_comment = models.CharField(max_length=200, null=True, blank=True)

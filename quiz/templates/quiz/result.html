@@ -28,18 +28,18 @@ Resultats eval
     </tr>
     </thead>
     <tbody>
-    {% for result in page_obj %}
+    {% for result in results %}
     <tr>
       <td>{{ result.stage_name }}</td>
       <td>{{ result.stage }}</td>
       <td class="result-date">
         {% language 'fr' %}
-        {{ result.start_date | date:'d-m-y'}}
+        {{ result.start_date | date:'d / m / y'}}
         {% endlanguage %}
       </td>
       <td>
         {% language 'fr' %}
-        {{ result.end_date | date:'d-m-y'}}
+        {{ result.end_date | date:'d / m / y'}}
         {% endlanguage %}
       </td>
       <td>{{ result.place }}</td>
@@ -69,5 +69,5 @@ Resultats eval
     </tbody>
   </table>
 </div>
-{% include 'paginator.html' %}
+<!--{% include 'paginator.html' %}-->
 {% endblock content %}

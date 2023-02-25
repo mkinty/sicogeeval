@@ -17,7 +17,7 @@ def generate_pdf(request, *args):
     # if download:
     # response['Content-Disposition'] = f'attachment; filename={pdf_name}_{datetime.now()}.pdf'
     # if display:
-    response['Content-Disposition'] = f'filename={pdf_name}_{datetime.now()}.pdf'
+    response['Content-Disposition'] = f'filename={pdf_name}.pdf'
     response['Content-Tranfer-Encoding'] = 'binary'
     html_string = render_to_string(template_path, context)
     html = weasyprint.HTML(string=html_string, base_url=request.build_absolute_uri())

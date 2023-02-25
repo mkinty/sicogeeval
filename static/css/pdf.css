@@ -1,12 +1,22 @@
 /*------- PAGE ----- */
 @page {
   size: A4 portrait;
-  margin: 1.5cm 1.5cm;
+  margin: 0.8cm 0.6cm;
+  counter-increment: page;
   @top {
         content: element(pageHeader);
     }
-
+    @bottom-right {
+        content: counter(page) '/' counter(pages);
+        white-space: pre;
+        border: 1px solid grey;
+        padding: 0.1rem 0.5rem;
+        margin-bottom: 0.2cm;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
 }
+
 .header {
     height: auto;
     display: flex;
@@ -123,6 +133,10 @@ i img {
 .recom span {
   margin: 0.2rem !important;
 }
+.org.multiple span{
+  display: flex;
+  white-space: wrap !important;
+}
 .logo {
   font-weight: 600;
   border-bottom: 0.1rem solid;
@@ -141,4 +155,46 @@ i img {
 
 .title {
   color: var(--black) !important;
+}
+.org.multiple {
+  display: inline-block !important;
+  justify-content: flex-start !important;
+}
+.org.multiple span{
+  white-space: normal;
+}
+/* ---- AUTO-ÉVALUATION DES ACQUIS ---- */
+.auto {
+  margin: 2rem 0 4rem 0 !important;
+}
+.auto .org {
+  width: 100% !important;
+}
+.auto .label {
+  width: 100% !important;
+}
+.auto .label.title {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.auto .auto-eval {
+  width: 60rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.eval-choice .choice {
+  padding: 0.4rem !important;
+  border: 0.2rem solid;
+  border-radius: 50%;
+  border-color: var(--logo);
+}
+.auto .eval-choice{
+  width: 20rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.page-content {
+  min-height: 130rem;
 }

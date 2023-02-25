@@ -1,0 +1,194 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyMethodMayBeStaticInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="42">
+            <item index="0" class="java.lang.String" itemvalue="validate-email" />
+            <item index="1" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="2" class="java.lang.String" itemvalue="defusedxml" />
+            <item index="3" class="java.lang.String" itemvalue="django-storages" />
+            <item index="4" class="java.lang.String" itemvalue="CairoSVG" />
+            <item index="5" class="java.lang.String" itemvalue="pylokit" />
+            <item index="6" class="java.lang.String" itemvalue="phonenumberslite" />
+            <item index="7" class="java.lang.String" itemvalue="django-localflavor-us" />
+            <item index="8" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="9" class="java.lang.String" itemvalue="Markdown" />
+            <item index="10" class="java.lang.String" itemvalue="pangocairocffi" />
+            <item index="11" class="java.lang.String" itemvalue="botocore" />
+            <item index="12" class="java.lang.String" itemvalue="cairocffi" />
+            <item index="13" class="java.lang.String" itemvalue="boto" />
+            <item index="14" class="java.lang.String" itemvalue="reportlab" />
+            <item index="15" class="java.lang.String" itemvalue="whitenoise" />
+            <item index="16" class="java.lang.String" itemvalue="arabic-reshaper" />
+            <item index="17" class="java.lang.String" itemvalue="python-bidi" />
+            <item index="18" class="java.lang.String" itemvalue="chardet" />
+            <item index="19" class="java.lang.String" itemvalue="jmespath" />
+            <item index="20" class="java.lang.String" itemvalue="boto3" />
+            <item index="21" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="22" class="java.lang.String" itemvalue="django-filter" />
+            <item index="23" class="java.lang.String" itemvalue="future" />
+            <item index="24" class="java.lang.String" itemvalue="django-taggit" />
+            <item index="25" class="java.lang.String" itemvalue="cssselect2" />
+            <item index="26" class="java.lang.String" itemvalue="html5lib" />
+            <item index="27" class="java.lang.String" itemvalue="six" />
+            <item index="28" class="java.lang.String" itemvalue="Brotli" />
+            <item index="29" class="java.lang.String" itemvalue="cffi" />
+            <item index="30" class="java.lang.String" itemvalue="weasyprint" />
+            <item index="31" class="java.lang.String" itemvalue="asgiref" />
+            <item index="32" class="java.lang.String" itemvalue="pydyf" />
+            <item index="33" class="java.lang.String" itemvalue="pycparser" />
+            <item index="34" class="java.lang.String" itemvalue="tinycss2" />
+            <item index="35" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="36" class="java.lang.String" itemvalue="fonttools" />
+            <item index="37" class="java.lang.String" itemvalue="Django" />
+            <item index="38" class="java.lang.String" itemvalue="pyphen" />
+            <item index="39" class="java.lang.String" itemvalue="zopfli" />
+            <item index="40" class="java.lang.String" itemvalue="webencodings" />
+            <item index="41" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E712" />
+          <option value="E128" />
+          <option value="E722" />
+          <option value="W292" />
+          <option value="E265" />
+          <option value="E501" />
+          <option value="E127" />
+          <option value="E225" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N801" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="django.db.models.fields.DateField.day" />
+          <option value="django.db.models.fields.DateField.month" />
+          <option value="django.db.models.fields.DateField.year" />
+          <option value="customers.models.Customer.objects" />
+          <option value="sales.models.Sale.objects" />
+          <option value="productions.models.Production.objects" />
+          <option value="deaths.models.Death.objects" />
+          <option value="funds.models.Fund.objects" />
+          <option value="warehouses.models.Warehouse.objects" />
+          <option value="expenses.models.Expense.objects" />
+          <option value="funds.models.Fund.subject_funds" />
+          <option value="csvs.models.Csv.id" />
+          <option value="menage.models.Menage.objects" />
+          <option value="menage.models.Quittancement.objects" />
+          <option value="csvs.models.Csv.objects" />
+          <option value="csvs.models.IdFrene.objects" />
+          <option value="quittancement.models.Quittancement.objects" />
+          <option value="occupantshlc.models.Occupant.objects" />
+          <option value="csvs.models.UpdateCsv.id" />
+          <option value="csvs.models.UpdateCsv.objects" />
+          <option value="authentication.views.EmailThread.start" />
+          <option value="team.models.Consultant.objects" />
+          <option value="team.models.Intervenant.objects" />
+          <option value="authentication.models.Consultant.objects" />
+          <option value="authentication.models.Intervenant.objects" />
+          <option value="mission.urls.*" />
+          <option value="mission.models.Mission.objects" />
+          <option value="django.contrib.auth.models.User.DoesNotExist" />
+          <option value="authentication.models.Team.objects" />
+          <option value="team.models.Team.objects" />
+          <option value="authen.models.Team.objects" />
+          <option value="operation.models.Operation.objects" />
+          <option value="project.models.Project.objects" />
+          <option value="household.models.Household.objects" />
+          <option value="occupant.models.Occupant.objects" />
+          <option value="tenant.models.Tenant.objects" />
+          <option value="receipt.models.Receipt.objects" />
+          <option value="rfr.models.Rfr.objects" />
+          <option value="income.models.Income.objects" />
+          <option value="relocation.models.Relocation.objects" />
+          <option value="django.db.models.fields.related.OneToOneField.esi_ug_number" />
+          <option value="location.models.Location.objects" />
+          <option value="django.db.models.fields.related.ForeignKey.esi" />
+          <option value="dashboard.models.Dropdown.objects" />
+          <option value="dashboard.models.Annex.objects" />
+          <option value="income.models.Rfr.objects" />
+          <option value="relocation.models.Location.objects" />
+          <option value="dashboard.models.Ceiling.objects" />
+          <option value="household.models.Household.object" />
+          <option value="str.deadline" />
+          <option value="occupant.models.VisitationRights.objects" />
+          <option value="lodging.models.Lodging.objects" />
+          <option value="proposal.models.Proposal.objects" />
+          <option value="receipt.models.LodReceipt.objects" />
+          <option value="household.household_locations" />
+          <option value="proposal.models.Proposal.id" />
+          <option value="proposal.models.ProposalLifecycle.objects" />
+          <option value="proposal.models.RelocationFollowUp.objects" />
+          <option value="django.db.models.fields.CharField.upper" />
+          <option value="django.db.models.fields.CharField.capitalize" />
+          <option value="income.models.TenantRfr.objects" />
+          <option value="income.models.OccupantRfr.objects" />
+          <option value="income.models.TenantIncome.objects" />
+          <option value="income.models.OccupantIncome.objects" />
+          <option value="income.models.TenantsRfr.objects" />
+          <option value="income.models.OccupantsRfr.objects" />
+          <option value="income.models.TenantsIncome.objects" />
+          <option value="income.models.OccupantsIncome.objects" />
+          <option value="income.models.TenantRev.objects" />
+          <option value="income.models.OccupantRev.objects" />
+          <option value="income.models.OccupantRef.objects" />
+          <option value="income.models.TenantRef.objects" />
+          <option value="revenue.models.TenantRef.objects" />
+          <option value="revenue.models.TenantRev.objects" />
+          <option value="revenue.models.OccupantRev.objects" />
+          <option value="revenue.models.OccupantRef.objects" />
+          <option value="revenue.models.AllTenantRef.objects" />
+          <option value="revenue.models.AllTenantRev.objects" />
+          <option value="dashboard.models.Common.objects" />
+          <option value="dashboard.models.Quartile.objects" />
+          <option value="household.models.HouseholdCeiling.objects" />
+          <option value="household.models.HouseholdSynthesis.objects" />
+          <option value="django.db.models.fields.related.OneToOneField.contractor" />
+          <option value="django.db.models.fields.related.OneToOneField.household_tenants" />
+          <option value="household.models.Household.household_tenants" />
+          <option value="django.db.models.fields.related.OneToOneField.household" />
+          <option value="proposal.models.ProposalSynthesis.objects" />
+          <option value="household.models.HouseholdLodging.objects" />
+          <option value="proposal.models.ProposalFollowUp.objects" />
+          <option value="proposal.models.ReleaseApplied.objects" />
+          <option value="quiz.models.Quiz.objects" />
+          <option value="distutils.command.register.filter" />
+          <option value="osorelv2.templatetags.range_filters.register" />
+          <option value="revenue.filters.AggregatedTenantRef.DoesNotExist" />
+          <option value="proposal.models.ValidationData.objects" />
+          <option value="tenant.models.Tenant.id" />
+          <option value="occupant.models.Occupant.id" />
+          <option value="occupant.models.VisitationRights.id" />
+          <option value="django.db.models.fields.related.OneToOneField.housing_id" />
+          <option value="time.time.time" />
+          <option value="receipt.models.LodgindReceiptCategory.objects" />
+          <option value="receipt.models.HouseholdReceiptCategory.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

@@ -18,11 +18,12 @@ class QuizForm(forms.ModelForm):
         ('Non', 'Non'),
     )
     CHECK_CHOICES = (
-        ('CSE', 'CSE'),
+        ('Rôle et fonctionnement du CSE', 'Rôle et fonctionnement du CSE'),
         ('SSCT', 'SSCT'),
-        ('Référent harcèlement', 'Référent harcèlement'),
+        ('Référent harcèlement sexuel', 'Référent harcèlement sexuel'),
         ('Représentant de proximité', 'Représentant de proximité'),
         ('DUERP', 'DUERP'),
+        ('Environnement', 'Environnement'),
         ('AUTRES', 'AUTRES'),
     )
     TYPE_CHOICES = (
@@ -113,6 +114,22 @@ class QuizForm(forms.ModelForm):
         choices=EVAL_CHOICES,
     )
     appreciation2 = forms.ChoiceField(
+        required=False,
+        widget=forms.RadioSelect,
+        choices=EVAL_CHOICES,
+    )
+    # AUTO-ÉVALUATION DES ACQUIS
+    acquis1 = forms.ChoiceField(
+        required=False,
+        widget=forms.RadioSelect,
+        choices=EVAL_CHOICES,
+    )
+    acquis2 = forms.ChoiceField(
+        required=False,
+        widget=forms.RadioSelect,
+        choices=EVAL_CHOICES,
+    )
+    acquis3 = forms.ChoiceField(
         required=False,
         widget=forms.RadioSelect,
         choices=EVAL_CHOICES,

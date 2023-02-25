@@ -29,16 +29,8 @@ def quiz_view(request):
 @login_required(login_url='login')
 def result_view(request):
     results = Quiz.objects.all()
-    query = request.GET.get('qs', '')
-    if query:
-        queryset = (Q(stage__icontains=query)) | (Q(name__icontains=query)) | (Q(stage_name__icontains=query)) | (
-            Q(start_date__icontains=query)) | (Q(teacher__icontains=query))
-        results = Quiz.objects.filter(queryset).distinct()
-    paginator = Paginator(results, 20)
-    page_number = request.GET.get('page')
-    page_obj = Paginator.get_page(paginator, page_number)
     context = {
-        'page_obj': page_obj,
+        'results': results,
     }
     return render(request, 'quiz/result.html', context)
 
@@ -51,13 +43,13 @@ def render_pdf_view(request, pk):
      """
     eval = get_object_or_404(Quiz, id=pk)
     # other_formations = list(eval.other_formation2)
-
+    author = eval.name if eval.name else 'NR'
     context = {
         # 'other_formations': other_formations,
         'eval': eval,
     }
     template_path = 'quiz/render_pdf.html'
-    pdf_name = 'Evaluation'
+    pdf_name = f'Fiche-eval-de-{author}-du-{eval.created.day}-{eval.created.month}-{eval.created.year}'
     # return render(request, template_path, context)
     return generate_pdf(request, template_path, pdf_name, context)
 

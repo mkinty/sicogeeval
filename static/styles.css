@@ -478,3 +478,31 @@ label span{
     color: white;
     transition: all 0.4s;
 }
+/* ---- AUTO-ÉVALUATION DES ACQUIS ---- */
+.org.auto {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+.org.auto .title {
+  padding: 0;
+}
+.org.auto .eval {
+  width: 90rem !important;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.org.auto .eval div:first-child {
+  width: 30rem !important;
+}
+.org.auto .eval div {
+  width: 30rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.1rem solid var(--text) !important;
+}
