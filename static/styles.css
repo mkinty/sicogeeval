@@ -495,10 +495,12 @@ label span{
   display: flex;
   justify-content: space-around !important;
 }
-.org.auto .eval div:first-child {
+.org.auto .eval div:first-child,
+.org.auto .eval ul li:first-child {
   min-width: 20rem !important;
 }
-.org.auto .eval div {
+.org.auto .eval div,
+.org.auto .eval ul li {
   min-width: 20rem !important;
   display: flex;
   align-items: center;
