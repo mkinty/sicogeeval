@@ -380,7 +380,7 @@ label span{
 
 }
 .result-date {
-    white-space: nowrap;
+    white-space: nowrap !important;
 }
 .modal-content {
     font-size: 2rem;
@@ -483,7 +483,6 @@ label span{
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
   padding: 0;
 }
 .org.auto .title {
@@ -494,13 +493,13 @@ label span{
   padding: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around !important;
 }
 .org.auto .eval div:first-child {
-  width: 30rem !important;
+  min-width: 20rem !important;
 }
 .org.auto .eval div {
-  width: 30rem !important;
+  min-width: 20rem !important;
   display: flex;
   align-items: center;
   justify-content: center;

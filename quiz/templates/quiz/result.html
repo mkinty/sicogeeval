@@ -18,8 +18,8 @@ Resultats eval
     <tr>
       <th>Formation</th>
       <th>Réalisation</th>
-      <th>Date début</th>
-      <th>Date fin</th>
+      <th class="result-date">Date début</th>
+      <th class="result-date">Date fin</th>
       <th>Lieu</th>
       <th>Formateur(s)</th>
       <th>Stagiaire</th>
@@ -37,7 +37,7 @@ Resultats eval
         {{ result.start_date | date:'d / m / y'}}
         {% endlanguage %}
       </td>
-      <td>
+      <td class="result-date">
         {% language 'fr' %}
         {{ result.end_date | date:'d / m / y'}}
         {% endlanguage %}
